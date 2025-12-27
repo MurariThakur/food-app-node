@@ -23,6 +23,8 @@ connectDB();
 app.use('/api/v1/',require('./routes/test.js'));
 app.use('/api/v1/auth',require('./routes/authRoutes.js'));
 app.use('/api/v1/user',require('./routes/userRoutes.js'));
+app.use('/api/v1/restaurant',require('./routes/restaurantRoutes.js'));
+app.use('/api/v1/category',require('./routes/categoryRoutes.js'));
 
 app.get('/',(req,res)=>{
     res.status(200).send("Welcome to my server");
